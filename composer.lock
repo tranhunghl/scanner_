@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "38e95c4121d4310b62533f525e60489d",
-    "content-hash": "8c592525640722a767a51df7e361f966",
+    "hash": "5cd25cfca79afdc0456608134bf4b466",
+    "content-hash": "f17dd2e353b939e770b5985fb672928d",
     "packages": [
         {
             "name": "asgardcms/adminlte-theme",
@@ -42,6 +42,44 @@
                 "asgard-cms"
             ],
             "time": "2016-01-12 12:47:36"
+        },
+        {
+            "name": "asgardcms/blog-module",
+            "version": "1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AsgardCms/Blog.git",
+                "reference": "e69b5e07344ead2c7e2ffc6ccb21e78931bdc262"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AsgardCms/Blog/zipball/e69b5e07344ead2c7e2ffc6ccb21e78931bdc262",
+                "reference": "e69b5e07344ead2c7e2ffc6ccb21e78931bdc262",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "asgard-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "info@asgardcms.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A blog module for AsgardCMS.",
+            "keywords": [
+                "asgardcms",
+                "blog",
+                "journal"
+            ],
+            "time": "2016-06-08 19:41:11"
         },
         {
             "name": "asgardcms/core-module",
@@ -271,6 +309,53 @@
                 "tree"
             ],
             "time": "2016-06-08 13:29:24"
+        },
+        {
+            "name": "asgardcms/notification-module",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AsgardCms/Notification.git",
+                "reference": "91bcb0b4042d6c72a5c20332feda791ead8544fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AsgardCms/Notification/zipball/91bcb0b4042d6c72a5c20332feda791ead8544fd",
+                "reference": "91bcb0b4042d6c72a5c20332feda791ead8544fd",
+                "shasum": ""
+            },
+            "require": {
+                "asgardcms/core-module": "~1.0",
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.1",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "asgard-module",
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Notification\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "n.widart@gmail.com"
+                }
+            ],
+            "description": "Module handling the real time notifications",
+            "keywords": [
+                "asgardcms",
+                "notifications",
+                "pusher"
+            ],
+            "time": "2016-06-08 13:26:59"
         },
         {
             "name": "asgardcms/page-module",

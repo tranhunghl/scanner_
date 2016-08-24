@@ -1,0 +1,9 @@
+<span class="label label-<?php echo e($label); ?>"><?php echo e($title); ?></span>
+<ul>
+    <?php foreach ($data as $dataLine): ?>
+    <li class="text-<?php echo e($color); ?>">
+        <?php echo $dataLine; ?>
+
+    </li>
+    <?php endforeach; ?>
+</ul>

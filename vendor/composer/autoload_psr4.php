@@ -40,6 +40,7 @@ return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Modules\\User\\' => array($baseDir . '/Modules/User'),
     'Modules\\Translation\\' => array($baseDir . '/Modules/Translation'),
+    'Modules\\Notification\\' => array($baseDir . '/Modules/Notification'),
     'Modules\\' => array($baseDir . '/Modules', $baseDir . '/Modules/User/Modules'),
     'Maatwebsite\\Sidebar\\' => array($vendorDir . '/maatwebsite/laravel-sidebar/src'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),

@@ -1,0 +1,31 @@
+<?php foreach ($changelog['versions'] as $version => $info): ?>
+<dl class="dl-horizontal">
+    <dt><a href="<?php echo e($changelog['url'].'/releases/tag/'.$version); ?>" target="_blank"><i class="fa fa-external-link-square"></i> <?php echo e($version); ?></a></dt>
+    <dd>
+        <?php if (isset($info['added'])): ?>
+        <?php echo $__env->make('workshop::admin.modules.partials.changelog-part', [
+            'title' => trans('workshop::modules.added'),
+            'label' => 'success',
+            'color' => 'green',
+            'data' => $info['added']
+        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php endif; ?>
+        <?php if (isset($info['changed'])): ?>
+        <?php echo $__env->make('workshop::admin.modules.partials.changelog-part', [
+            'title' => trans('workshop::modules.changed'),
+            'label' => 'warning',
+            'color' => 'orange',
+            'data' => $info['changed']
+        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php endif; ?>
+        <?php if (isset($info['removed'])): ?>
+        <?php echo $__env->make('workshop::admin.modules.partials.changelog-part', [
+            'title' => trans('workshop::modules.removed'),
+            'label' => 'danger',
+            'color' => 'red',
+            'data' => $info['removed']
+        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php endif; ?>
+    </dd>
+</dl>
+<?php endforeach; ?>
